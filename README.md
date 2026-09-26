@@ -1,36 +1,183 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FitLog — Workout Library & Gym Companion
 
-## Getting Started
+FitLog is a modern workout library and gym companion built with **Next.js, TypeScript, React, and Tailwind CSS**.
 
-First, run the development server:
+It helps users browse workouts, explore exercise details, create workout plans, save workouts, and track their training progress through a simple and focused interface.
+
+## 🔗 Live Demo
+
+**Live Website:**
+https://fitlog-workout-platform.netlify.app/
+
+**GitHub Repository:**
+https://github.com/ridumondol/fitlog-workout-library
+
+---
+
+## ✨ Key Features
+
+1. **🏋️ Workout Library**
+   Browse different workouts and exercises from the workout collection.
+
+2. **📋 Workout Details**
+   View detailed information about individual workouts and exercises.
+
+3. **🎯 Workout Planning**
+   Select workouts and organize them into a personal training plan.
+
+4. **💾 Save & Track Workouts**
+   Save selected workouts and track completed workout sets and weekly activity.
+
+5. **📱 Responsive Design**
+   Fully responsive and modern fitness-focused interface for desktop, tablet, and mobile devices.
+
+---
+
+## 🛠️ Technologies Used
+
+* **Next.js**
+* **React**
+* **TypeScript**
+* **Tailwind CSS**
+* **Next.js App Router**
+* **JavaScript / JSX**
+* **HTML5**
+* **CSS3**
+* **ESLint**
+
+---
+
+## 📂 Project Structure
+
+```text
+fitlog-workout-library/
+│
+├── public/
+│   └── images/
+│
+├── src/
+│   └── app/
+│       ├── components/
+│       ├── context/
+│       ├── workouts/
+│       ├── page.tsx
+│       ├── layout.tsx
+│       └── globals.css
+│
+├── .gitignore
+├── next.config.ts
+├── package.json
+├── package-lock.json
+├── postcss.config.mjs
+├── tsconfig.json
+└── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/ridumondol/fitlog-workout-library.git
+```
+
+### 2. Go to the project folder
+
+```bash
+cd fitlog-workout-library
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 5. Open in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📦 Build for Production
 
-To learn more about Next.js, take a look at the following resources:
+Create a production build:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Then start the production server:
 
-## Deploy on Vercel
+```bash
+npm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🌐 Deployment
+
+The project is deployed on **Netlify**.
+
+It can also be deployed on **Vercel** because it is built with Next.js.
+
+---
+
+## 📸 Preview
+
+### FitLog Home Page
+
+The homepage includes:
+
+* FitLog branding
+* Workout Library navigation
+* Fitness-focused hero section
+* Browse Workouts CTA
+* Workout listing section
+* Modern dark fitness UI
+* Responsive layout
+
+---
+
+## 🧠 What I Learned
+
+While building this project, I practiced:
+
+* Next.js App Router
+* React Components
+* TypeScript
+* Client and Server Components
+* React state management
+* Context API
+* Dynamic routes
+* Reusable components
+* Responsive UI design
+* Git & GitHub
+* Netlify deployment
+
+---
+
+## 👨‍💻 Author
+
+**Ridoy Mondol**
+
+GitHub:
+https://github.com/ridumondol
+
+---
+
+## 📄 License
+
+This project is created for learning and portfolio purposes.
+
+© 2026 Ridoy Mondol — FitLog Workout Library
