@@ -1,3 +1,5 @@
+import { FITLOG_API_DATA } from "../data/workouts";
+
 export interface Workout {
   id: number;
   name: string;
@@ -22,13 +24,26 @@ export async function fetchWorkouts(): Promise<Workout[]> {
     const res = await fetch(API_BASE);
 
     if (!res.ok) {
-      throw new Error("Failed to fetch workouts");
+      throw new Error(`Failed to fetch workouts: ${res.status} ${res.statusText}`);
     }
 
-    return await res.json();
+    const data = await res.json();
+
+    // Guard against the API returning something unexpected (e.g. an
+    // error object) instead of an array — that would otherwise silently
+    // render as "No workouts found."
+    if (!Array.isArray(data) || data.length === 0) {
+      throw new Error("API returned no workouts, falling back to local data");
+    }
+
+    return data;
   } catch (error) {
-    console.error("Error fetching workouts:", error);
-    return [];
+    // On Vercel/Netlify this is most often a CORS rejection from the
+    // worker (it only allowed the localhost origin) rather than the
+    // data actually being empty. Fall back to the bundled dataset so
+    // the UI never shows a false "No workouts found."
+    console.warn("Error fetching workouts, using local fallback data:", error);
+    return FITLOG_API_DATA;
   }
 }
 
@@ -43,7 +58,7 @@ export async function fetchWorkoutById(
       if (!data.error) return data;
     }
   } catch (error) {
-    console.error(`Error fetching workout ${id}:`, error);
+    console.warn(`Error fetching workout ${id}, falling back to full list:`, error);
   }
 
   // The single-item endpoint currently returns { error: "Not found" }
@@ -52,7 +67,7 @@ export async function fetchWorkoutById(
     const all = await fetchWorkouts();
     return all.find((w) => String(w.id) === String(id)) ?? null;
   } catch (error) {
-    console.error(`Fallback lookup failed for workout ${id}:`, error);
+    console.warn(`Fallback lookup failed for workout ${id}:`, error);
     return null;
   }
 }

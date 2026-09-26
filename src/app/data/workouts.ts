@@ -17,9 +17,9 @@ export interface WorkoutItem {
 export const FITLOG_API_DATA: WorkoutItem[] = [
   {
     id: 1,
-    name: "BARBELL BENCH PRESS",
-    image: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&q=80&w=800",
-    muscleGroups: ["CHEST", "ARMS"],
+    name: "Barbell Bench Press",
+    image: "https://img.magnific.com/free-photo/portrait-anime-character-doing-fitness-exercising_23-2151666664.jpg?w=740",
+    muscleGroups: ["Chest", "Arms"],
     equipment: "Barbell, Bench",
     difficulty: "Intermediate",
     duration: 25,
@@ -29,17 +29,17 @@ export const FITLOG_API_DATA: WorkoutItem[] = [
     rating: 4.8,
     description: "A compound press that builds chest thickness, triceps, and pressing power from a stable bench.",
     instructions: [
-      "Lie on the bench with eyes under the bar and feet planted firmly on the floor.",
-      "Unrack with locked elbows and lower the bar under control to your mid-chest.",
-      "Press up explosively in a slight arc until elbows lock without bouncing off the chest.",
-      "Keep your shoulder blades pinched together and maintain a natural arch in your lower back."
+      "Lie on the bench with eyes under the bar and feet planted.",
+      "Unrack with locked elbows and lower the bar to mid-chest.",
+      "Press up in a slight arc until elbows lock without bouncing.",
+      "Keep shoulder blades pinched and a natural arch in the back."
     ]
   },
   {
     id: 2,
-    name: "PULL-UP",
-    image: "https://images.unsplash.com/photo-1598971639058-fab3c3109a00?auto=format&fit=crop&q=80&w=800",
-    muscleGroups: ["BACK", "ARMS"],
+    name: "Pull-Up",
+    image: "https://img.magnific.com/free-photo/3d-cartoon-fitness-man_23-2151691400.jpg?w=740",
+    muscleGroups: ["Back", "Arms"],
     equipment: "Pull-up Bar",
     difficulty: "Intermediate",
     duration: 15,
@@ -47,39 +47,39 @@ export const FITLOG_API_DATA: WorkoutItem[] = [
     sets: 4,
     reps: "6-10",
     rating: 4.7,
-    description: "Bodyweight vertical pull that hammers lats, biceps, and grip while improving relative upper-body strength.",
+    description: "Bodyweight vertical pull that hammers lats, biceps, and grip while improving relative strength.",
     instructions: [
-      "Hang from the bar with a shoulder-width overhand grip and full elbow extension.",
-      "Brace your core and pull your collarbone toward the bar while driving elbows down.",
-      "Pause briefly at the top with chin over the bar, then lower under full control.",
-      "Avoid swinging or kipping to maximize back muscle engagement."
+      "Hang from the bar with a shoulder-width overhand grip.",
+      "Brace your core and pull your chest toward the bar.",
+      "Pause at the top with elbows tucked, then lower with control.",
+      "Avoid kipping unless you are training a specific variation."
     ]
   },
   {
     id: 3,
-    name: "BARBELL BACK SQUAT",
-    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=800",
-    muscleGroups: ["LEGS", "CORE"],
-    equipment: "Barbell, Squat Rack",
+    name: "Back Squat",
+    image: "https://img.magnific.com/free-photo/3d-cartoon-fitness-man_23-2151691401.jpg?w=740",
+    muscleGroups: ["Legs", "Core"],
+    equipment: "Barbell, Rack",
     difficulty: "Advanced",
     duration: 30,
     caloriesBurned: 240,
     sets: 5,
     reps: "5-8",
     rating: 4.9,
-    description: "The primary lower-body strength movement developing quads, glutes, hamstrings, and core stability.",
+    description: "The king of lower-body lifts: quads, glutes, and spinal stability under a loaded bar.",
     instructions: [
-      "Set the bar across your upper traps, unrack, and step back with a shoulder-width stance.",
-      "Inhale deep, brace your midline, and sit your hips down and back between your knees.",
-      "Descend until your hip crease drops below the top of your knees (parallel or deeper).",
-      "Drive hard through the mid-foot to return to standing, locking out hips at top."
+      "Set the bar on your upper traps and unrack with a tight brace.",
+      "Sit the hips down and back while keeping knees tracking over toes.",
+      "Descend until thighs are at least parallel, chest tall.",
+      "Drive through mid-foot to stand, locking hips at the top."
     ]
   },
   {
     id: 4,
-    name: "OVERHEAD BARBELL PRESS",
-    image: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&q=80&w=800",
-    muscleGroups: ["SHOULDERS", "ARMS"],
+    name: "Overhead Press",
+    image: "https://img.magnific.com/free-photo/portrait-anime-character-doing-fitness-exercising_23-2151666703.jpg?w=740",
+    muscleGroups: ["Shoulders", "Arms"],
     equipment: "Barbell",
     difficulty: "Intermediate",
     duration: 20,
@@ -87,19 +87,19 @@ export const FITLOG_API_DATA: WorkoutItem[] = [
     sets: 4,
     reps: "6-8",
     rating: 4.6,
-    description: "Strict vertical press building shoulder width, upper chest thickness, and lock-out power.",
+    description: "Strict standing press that builds delts, triceps, and overhead stability without leg drive.",
     instructions: [
-      "Rest the bar on your front shoulders with forearms vertical and hands just outside shoulders.",
-      "Squeeze glutes and abs tight, then press the bar straight up overhead clear of your face.",
-      "Lock out overhead with biceps aligned with ears and ribs tucked down.",
-      "Lower the weight smoothly back to the front rack position before repeating."
+      "Hold the bar at the front rack with a vertical forearm.",
+      "Brace abs and glutes, then press the bar over the crown of the head.",
+      "Lock out with biceps by the ears and a stacked ribcage.",
+      "Lower to the clavicle under control before the next rep."
     ]
   },
   {
     id: 5,
-    name: "DUMBBELL BICEP CURL",
-    image: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&q=80&w=800",
-    muscleGroups: ["ARMS"],
+    name: "Dumbbell Bicep Curl",
+    image: "https://img.magnific.com/free-photo/portrait-anime-character-doing-fitness-exercising_23-2151666702.jpg?w=740",
+    muscleGroups: ["Arms"],
     equipment: "Dumbbells",
     difficulty: "Beginner",
     duration: 12,
@@ -107,19 +107,19 @@ export const FITLOG_API_DATA: WorkoutItem[] = [
     sets: 3,
     reps: "10-12",
     rating: 4.3,
-    description: "Classic isolation move isolating the biceps through full extension and peak contraction.",
+    description: "An isolation curl to thicken the biceps with a full stretch and a hard peak contraction.",
     instructions: [
-      "Stand tall holding dumbbells at your sides with palms facing forward.",
-      "Curl weights upward while keeping upper arms glued close to your torso.",
-      "Squeeze biceps hard at peak contraction near shoulder height.",
-      "Lower dumbbells slowly under resistance to full arm extension."
+      "Stand tall with dumbbells at your sides, palms forward.",
+      "Curl the weights without swinging the torso.",
+      "Squeeze at the top, then lower until arms are fully extended.",
+      "Keep elbows pinned near the ribs throughout."
     ]
   },
   {
     id: 6,
-    name: "HOLLOW-BODY PLANK",
-    image: "https://images.unsplash.com/photo-1566241142559-40e1dab266c6?auto=format&fit=crop&q=80&w=800",
-    muscleGroups: ["CORE"],
+    name: "Hollow-Body Plank",
+    image: "https://img.magnific.com/free-photo/3d-cartoon-fitness-man_23-2151691489.jpg?w=740",
+    muscleGroups: ["Core"],
     equipment: "Bodyweight",
     difficulty: "Beginner",
     duration: 10,
@@ -127,19 +127,19 @@ export const FITLOG_API_DATA: WorkoutItem[] = [
     sets: 3,
     reps: "30-45s",
     rating: 4.4,
-    description: "Static isometric hold designed to fortify deep abdominal wall stability and posture.",
+    description: "A braced plank variation that trains anti-extension through the entire anterior core.",
     instructions: [
-      "Place forearms flat on the ground under shoulders with feet hip-width apart.",
-      "Tuck your pelvis under slightly to eliminate lower back arching.",
-      "Contract glutes, quads, and abdominals as hard as possible.",
-      "Maintain steady breathing while keeping hips aligned with shoulders."
+      "Set elbows under shoulders and squeeze glutes and quads.",
+      "Tuck the pelvis so the lower back stays flat.",
+      "Breathe into the brace without sagging the hips.",
+      "Hold for the prescribed time, then rest and repeat."
     ]
   },
   {
     id: 7,
-    name: "BURPEE",
-    image: "https://images.unsplash.com/photo-1434682881908-b43d0467b798?auto=format&fit=crop&q=80&w=800",
-    muscleGroups: ["FULL BODY"],
+    name: "Burpee",
+    image: "https://img.magnific.com/free-photo/3d-cartoon-business-character_1048-16544.jpg?w=740",
+    muscleGroups: ["Full Body"],
     equipment: "Bodyweight",
     difficulty: "Intermediate",
     duration: 12,
@@ -147,19 +147,19 @@ export const FITLOG_API_DATA: WorkoutItem[] = [
     sets: 4,
     reps: "8-12",
     rating: 4.2,
-    description: "High-intensity conditioning dynamic combining a drop-pushup and explosive jump.",
+    description: "A high-output full-body drill that mixes a squat, plank, and jump for conditioning.",
     instructions: [
-      "From standing, squat down and plant hands firmly on the floor.",
-      "Kick feet back into a high pushup plank and lower chest to ground.",
-      "Press up, snap feet forward under hips, and jump explosively upward.",
-      "Land softly on bent knees and transition immediately into the next rep."
+      "Squat down and plant your hands on the floor.",
+      "Kick the feet back to a solid plank, then jump them forward.",
+      "Explode up into a jump and land softly.",
+      "Keep a steady rhythm and a braced midline."
     ]
   },
   {
     id: 8,
-    name: "CONVENTIONAL DEADLIFT",
-    image: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&q=80&w=800",
-    muscleGroups: ["BACK", "LEGS"],
+    name: "Conventional Deadlift",
+    image: "https://img.magnific.com/free-photo/portrait-anime-character-doing-fitness-exercising_23-2151666704.jpg?w=740",
+    muscleGroups: ["Back", "Legs"],
     equipment: "Barbell",
     difficulty: "Advanced",
     duration: 28,
@@ -167,19 +167,19 @@ export const FITLOG_API_DATA: WorkoutItem[] = [
     sets: 4,
     reps: "3-5",
     rating: 4.9,
-    description: "Ultimate posterior chain compound movement targeting glutes, hamstrings, lats, and spine.",
+    description: "Hip-hinge powerhouse for the posterior chain, grip, and total-body tension.",
     instructions: [
-      "Stand with shin 1 inch from bar, step stance hip-width, grip bar outside shins.",
-      "Drop hips, wedge chest up, pull slack out of bar, and pack lats tight.",
-      "Push floor away with legs until bar clears knees, then lock out hips.",
-      "Hinge at hips first to lower bar under control back to platform."
+      "Stand with the bar over mid-foot and take a strong mixed or double-overhand grip.",
+      "Set the back flat, brace hard, and push the floor away.",
+      "Stand tall by driving hips to the bar, then reverse the path.",
+      "Do not bounce the plates; reset tension every rep."
     ]
   },
   {
     id: 9,
-    name: "PUSH-UP",
-    image: "https://images.unsplash.com/photo-1598971639058-fab3c3109a00?auto=format&fit=crop&q=80&w=800",
-    muscleGroups: ["CHEST", "ARMS", "CORE"],
+    name: "Push-Up",
+    image: "https://img.magnific.com/free-photo/3d-cartoon-fitness-man_23-2151691429.jpg?w=740",
+    muscleGroups: ["Chest", "Arms", "Core"],
     equipment: "Bodyweight",
     difficulty: "Beginner",
     duration: 10,
@@ -187,39 +187,39 @@ export const FITLOG_API_DATA: WorkoutItem[] = [
     sets: 3,
     reps: "12-15",
     rating: 4.5,
-    description: "Essential horizontal bodyweight press strengthening chest, anterior delts, and triceps.",
+    description: "A scalable pressing staple that trains chest, triceps, and a rigid trunk.",
     instructions: [
-      "Set hands slightly wider than shoulders in a rigid top plank posture.",
-      "Lower entire body as one unit until chest hovers just off the floor.",
-      "Keep elbows tucked at a 45-degree angle relative to torso.",
-      "Push firmly back up to full elbow extension without sagging hips."
+      "Place hands slightly wider than shoulders, body in a straight line.",
+      "Lower until the chest nearly kisses the floor.",
+      "Press up without letting hips pike or sag.",
+      "Keep elbows about 45 degrees from the torso."
     ]
   },
   {
     id: 10,
-    name: "WALKING LUNGE",
-    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=800",
-    muscleGroups: ["LEGS"],
-    equipment: "Dumbbells (Optional)",
+    name: "Walking Lunge",
+    image: "https://img.magnific.com/free-photo/portrait-anime-character-doing-fitness-exercising_23-2151666701.jpg?w=740",
+    muscleGroups: ["Legs"],
+    equipment: "Dumbbells (optional)",
     difficulty: "Beginner",
     duration: 18,
     caloriesBurned: 170,
     sets: 3,
     reps: "10-12/leg",
     rating: 4.4,
-    description: "Unilateral leg builder enhancing quad strength, glute activation, and leg symmetry.",
+    description: "Unilateral stepping pattern that builds quads, glutes, and balance under load.",
     instructions: [
-      "Step forward with right leg and lower back knee toward the floor.",
-      "Keep front shin vertical and torso upright throughout movement.",
-      "Drive off right heel to bring feet together or step directly into next stride.",
-      "Alternate legs smoothly while maintaining core tension."
+      "Step forward and drop the back knee toward the floor.",
+      "Keep the front knee stacked over the mid-foot.",
+      "Drive through the front heel to the next step.",
+      "Stay tall through the torso and control each landing."
     ]
   },
   {
     id: 11,
-    name: "RUSSIAN TWIST",
-    image: "https://images.unsplash.com/photo-1566241142559-40e1dab266c6?auto=format&fit=crop&q=80&w=800",
-    muscleGroups: ["CORE"],
+    name: "Russian Twist",
+    image: "https://img.magnific.com/free-photo/3d-cartoon-fitness-man_23-2151691487.jpg?w=740",
+    muscleGroups: ["Core"],
     equipment: "Medicine Ball",
     difficulty: "Beginner",
     duration: 8,
@@ -227,19 +227,19 @@ export const FITLOG_API_DATA: WorkoutItem[] = [
     sets: 3,
     reps: "16-20",
     rating: 4.1,
-    description: "Rotational core drill strengthening internal and external obliques under continuous tension.",
+    description: "Rotational core work that trains the obliques while you stay balanced on the sit bones.",
     instructions: [
-      "Sit on floor with knees bent and feet elevated slightly off ground.",
-      "Hold weight with both hands and lean back 45 degrees to engage abs.",
-      "Rotate torso to tap weight on floor beside right hip, then left hip.",
-      "Keep shoulders relaxed and movement controlled from the core."
+      "Sit with a slight lean back and feet lightly off the floor.",
+      "Hold the ball at chest height and rotate to one side.",
+      "Tap the floor, then rotate to the other side.",
+      "Move from the ribcage, not just the arms."
     ]
   },
   {
     id: 12,
-    name: "KETTLEBELL SWING",
-    image: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&q=80&w=800",
-    muscleGroups: ["FULL BODY", "SHOULDERS"],
+    name: "Kettlebell Swing",
+    image: "https://img.magnific.com/free-photo/3d-cartoon-fitness-man_23-2151691505.jpg?w=740",
+    muscleGroups: ["Full Body", "Shoulders"],
     equipment: "Kettlebell",
     difficulty: "Intermediate",
     duration: 16,
@@ -247,12 +247,12 @@ export const FITLOG_API_DATA: WorkoutItem[] = [
     sets: 5,
     reps: "12-15",
     rating: 4.7,
-    description: "Explosive ballistic hip hinge developing glute power and cardiovascular capacity.",
+    description: "Explosive hip hinge that builds posterior power, grip, and conditioning in one move.",
     instructions: [
-      "Hinge at hips to hike kettlebell between legs with arms loose.",
-      "Snap hips forward aggressively to float kettlebell to chest level.",
-      "Let kettlebell fall naturally back into hip hinge without squatting.",
-      "Maintain flat spine and drive continuously from posterior chain."
+      "Hinge, hike the bell back between the legs, then snap the hips.",
+      "Let the bell float to chest height with loose arms.",
+      "Brace at the top, then hinge as the bell falls.",
+      "Never squat the swing — it is a hinge, not a squat."
     ]
   }
 ];
