@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -26,12 +25,16 @@ export default function Hero() {
 
           {/* CTA Button */}
           <div className="mt-8">
-            <Link
-              href="/workouts"
-              className="inline-flex items-center justify-center rounded-lg bg-[#ccff00] px-6 py-3.5 text-xs font-black uppercase tracking-wider text-zinc-950 transition-all hover:bg-[#b8e600] active:scale-95"
+            <a
+              href="#library"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('library')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="inline-flex items-center justify-center rounded-lg bg-[#ccff00] px-6 py-3.5 text-xs font-black uppercase tracking-wider text-zinc-950 transition-all hover:bg-[#b8e600] active:scale-95 cursor-pointer"
             >
               BROWSE WORKOUTS
-            </Link>
+            </a>
           </div>
         </div>
 

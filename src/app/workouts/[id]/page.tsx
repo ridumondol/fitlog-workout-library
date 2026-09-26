@@ -14,7 +14,7 @@ export default function WorkoutDetailPage() {
   const [workout, setWorkout] = useState<WorkoutItem | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  const { addToPlan, addToSaved, plan } = useFitLog();
+  const { addToPlan, addToSaved, plan, saved } = useFitLog();
 
   useEffect(() => {
     async function loadWorkout() {
@@ -55,6 +55,7 @@ export default function WorkoutDetailPage() {
   }
 
   const isAlreadyInPlan = plan.some((p) => p.id === workout.id);
+  const isAlreadySaved = saved.some((s) => s.id === workout.id);
 
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100 py-12 px-4 sm:px-6 lg:px-8">
@@ -163,10 +164,14 @@ export default function WorkoutDetailPage() {
 
               <button
                 onClick={() => addToSaved(workout)}
-                className="flex-1 py-3.5 px-5 rounded-xl font-bold text-xs uppercase tracking-wider border border-zinc-700 bg-zinc-900 hover:bg-zinc-800 text-zinc-200 flex items-center justify-center gap-2 transition-all"
+                className={`flex-1 py-3.5 px-5 rounded-xl font-black text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all ${
+                  isAlreadySaved
+                    ? 'bg-zinc-800 text-zinc-500 border border-transparent'
+                    : 'border border-zinc-700 bg-zinc-900 hover:bg-zinc-800 text-zinc-200 font-bold'
+                }`}
               >
                 <span>🔖</span>
-                <span>Save for later</span>
+                <span>{isAlreadySaved ? 'Saved for later' : 'Save for later'}</span>
               </button>
             </div>
 
