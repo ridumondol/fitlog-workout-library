@@ -68,10 +68,6 @@ export function FitLogProvider({ children }: { children: React.ReactNode }) {
       showToast(`"${workout.name}" is already in your plan!`);
       return;
     }
-    if (plan.length >= 5) {
-      showToast("Daily limit reached! Maximum 5 lifts allowed.");
-      return;
-    }
     setPlan((prev) => [...prev, workout]);
     showToast(`Added "${workout.name}" to today's plan`);
   };
